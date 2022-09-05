@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "amptest",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authamptest5ef52609",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
